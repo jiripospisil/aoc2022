@@ -23,7 +23,7 @@ fn main() {
     // Left
     for i in 0..NUM {
         let mut max = grid[i][0];
-    
+
         for j in 1..NUM {
             if grid[i][j] > max {
                 visible[i][j] = true;
@@ -35,7 +35,7 @@ fn main() {
     // Right
     for i in 0..NUM {
         let mut max = grid[i][NUM - 1];
-    
+
         for j in (0..NUM).rev() {
             if grid[i][j] > max {
                 visible[i][j] = true;
