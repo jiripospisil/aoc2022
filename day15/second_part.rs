@@ -80,10 +80,6 @@ fn main() {
                 process::exit(0);
             }
 
-            if range.start() < init.start() {
-                init = *range.start()..=*init.end();
-            }
-
             init = *init.start().min(range.start())..=*init.end().max(range.end());
         }
     }
